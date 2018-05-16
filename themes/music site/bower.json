@@ -1,0 +1,17 @@
+{
+  "name": "cay-theme",
+  "version": "1.0.0",
+  "homepage": "http://cayennecreative.com",
+  "authors": [
+    "Sam Brasseale <sbrasseale@cayennecreative.com>"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.1",
+    "neat": "~1.7.2",
+    "bi-app-sass": "latest"
+  },
+  "resolutions": {
+    "bourbon": "~4.2.1",
+    "angular": "1.x"
+  }
+}

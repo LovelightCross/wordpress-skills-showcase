@@ -1,0 +1,6 @@
+/themes/*/node_modules/*
+/themes/*/bower_components/*
+staging*
+production*
+local*
+debug.log

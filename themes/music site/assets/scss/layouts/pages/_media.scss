@@ -1,0 +1,156 @@
+#page-wrapper {
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #000000; 
+}
+
+#video-section-wrapper {
+    width: 100%;
+    margin: 0 0 10% 0;
+}
+
+#video-player-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#video-content {
+    width: 70%;
+}
+
+#video-header-text {
+    font-family: 'Abel', sans-serif;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 1% 0;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+#video-subheader {
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400px;
+    -webkit-font-smoothing: antialiased;
+    // line-height: 25px;
+    text-align: center;
+}
+
+#video-footer-container {
+    margin: 5% 0 0 0;
+}
+
+#video-footer-text {
+    font-family: 'Abel', sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#video-btn-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3% 0 0 0;
+    
+}
+#video-btn {
+    font-family: 'Source Code Pro', monospace;
+    color: #E7D0BA;
+    font-size: 15px;
+    font-weight: 400;
+    list-style-type: none;
+    letter-spacing: 2px;
+    padding: 1% 2%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border: 2px solid #E7D0BA;
+    -webkit-font-smoothing: antialiased;
+    
+
+    
+}
+
+#video-btn:hover  {
+
+    background-color: #E7D0BA;    
+    color: #000000;
+}
+
+#gallery-section-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    // margin: 0 auto;
+      margin-left: 0%;
+}
+
+.slick-div {
+    width: 100%;
+}
+
+.slick-img {
+    width: 100%;
+}
+
+#social-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+#social-header-text {
+    font-family: 'Abel', sans-serif;
+    font-size:54px;
+    color:#FFFFFF;
+    font-weight: 400;
+    letter-spacing: 4px; 
+}
+
+#instafeed {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#instafeed img {
+    width: 227px;
+    height: 227px;
+    
+    
+}
+
+
+
+
+
+
+
+// * {
+//     border: 1px solid white;
+// }
