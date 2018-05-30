@@ -145,7 +145,17 @@ body {
     
 }
 
-
+.slick-prev:after{
+    z-index: 1;
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    z-index: 1;
+    color: red;
+    font-size: 30px;
+  }
 
 
 

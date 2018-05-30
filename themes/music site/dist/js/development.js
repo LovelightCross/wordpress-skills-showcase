@@ -3227,10 +3227,12 @@ var CAY = window.CAY || {};
   
   slickStuff: function(elem) {
 
-    elem.slick({
+    $('.slider').slick({
       infinite: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      nextArrow: '<i class="fa fa-angle-right"></i>',
+      prevArrow: '<i class="fa fa-angle-left"></i>',
     });
 
   },
@@ -3281,6 +3283,7 @@ var CAY = window.CAY || {};
       CAY.Helpers.scrollMusic($(this));
     });
 
+  
     CAY.Helpers.slickStuff($('.slider'));
 
     $('#instafeed').ready (function() {

@@ -28,7 +28,7 @@
                 <div class="header-container">
 
                     <ul id="nav-bar">
-                        <li id="home-link" class="nav-links">HOME</li>
+                    <a id="merch-link" href="http://music-site.test/"><li id="home-link" class="nav-links">HOME</li></a>
                         <li id="band-link" class="nav-links">BAND</li>
                         <li id="tour-link" class="nav-links">TOUR</li>
                         <li id="news-link" class="nav-links" style="margin-right: 5%;">NEWS</li>
@@ -36,7 +36,7 @@
                         <li id="music-link" class="nav-links" style="margin-left: 5%;">MUSIC</li>
                         <a id="media-link" href="http://music-site.test/media/"><li id="media-link" class="nav-links">MEDIA</li></a>
                         <a id="merch-link" href="http://music-site.test/merch/"><li id="merch-link" class="nav-links">MERCH</li></a>
-                        <li id="contact-link" class="nav-links">CONTACT</li>
+                        <a id="media-link" href="http://music-site.test/contact/"><li id="contact-link" class="nav-links">CONTACT</li></a>
                     </ul>
 
                 </div>

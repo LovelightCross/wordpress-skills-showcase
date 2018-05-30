@@ -1,0 +1,22 @@
+2018-05-22T14:05:55+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-05-23T16:16:28+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+
+2018-05-23T16:17:39+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+

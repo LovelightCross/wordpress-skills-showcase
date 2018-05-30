@@ -1,0 +1,86 @@
+#page-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-header-container {
+    max-height: 98%;
+    overflow: hidden;
+}
+
+#contact-header-img {
+    width: 100%;
+}
+
+#contact-img-overlay {
+    background-color: rgba(16,8,6,.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    // height: 100%;
+    
+}
+
+#contact-title-text {
+    font-family: 'Abel', sans-serif;
+    font-size: 96px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#contact-subtitle-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    color: #E7D0BA;
+    text-align: center;
+    margin-top: -5%;
+    -webkit-font-smoothing: antialiased;
+
+    // letter-spacing: 4px;
+}
+
+.gfield_label,  {
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF; 
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+} 
+
+ gform_wrapper, .gfield_required {
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF !important; 
+    -webkit-font-smoothing: antialiased !important;
+    font-size: 14px;
+} 
+
+.field_sublabel_below {
+    //  font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF !important; 
+    -webkit-font-smoothing: antialiased;
+    // font-size: 14px;
+}
+
+#gform_submit_button_1 {
+    background-color: #000000;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-font-smoothing: antialiased !important;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 1% 3%;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.gform_footer {
+    text-align: center;
+}
+// * {
+//     border: 1px solid white;
+// }

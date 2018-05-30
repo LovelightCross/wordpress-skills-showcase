@@ -29,6 +29,7 @@ var CAY = window.CAY || {};
       CAY.Helpers.scrollMusic($(this));
     });
 
+  
     CAY.Helpers.slickStuff($('.slider'));
 
     $('#instafeed').ready (function() {
