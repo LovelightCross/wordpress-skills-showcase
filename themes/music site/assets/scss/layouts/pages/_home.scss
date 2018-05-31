@@ -434,8 +434,8 @@ header.in-view{
 #band-news-container {
     display: flex;
     // flex-wrap: wrap;
-    width: 70%;
-    // margin-bottom: -40%;
+    width: 60%;
+    margin: 10% 0 15% 0%;
     justify-content: space-between;
 }
 
@@ -445,10 +445,12 @@ header.in-view{
     font-weight: 400;
     font-size: 54px;
     line-height: 59px;
+    -webkit-font-smoothing: antialiased;
 }
 
 #twitter-container {
     width: 30%;
+    margin-right: -10%;
 }
 
 #news-container {
@@ -488,6 +490,7 @@ header.in-view{
 
 #read-more {
     color: #E7D0BA;
+    text-decoration: none;
 }
 
 #blog-date {
@@ -630,7 +633,11 @@ header.in-view{
 
   
  
-
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    
+  }
 
 
 

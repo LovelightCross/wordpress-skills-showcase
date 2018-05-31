@@ -361,14 +361,14 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 					<?php esc_html_e( 'Credit or debit card', 'woocommerce-gateway-stripe' ); ?>
 				</label>
 
-				<div id="stripe-card-element" style="background:#fff;padding:0 1em;border:1px solid #ddd;margin:5px 0;padding:10px 5px;">
+				<div id="stripe-card-element" class="wc-stripe-elements-field">
 				<!-- a Stripe Element will be inserted here. -->
 				</div>
 			<?php } else { ?>
 				<div class="form-row form-row-wide">
 					<label for="stripe-card-element"><?php esc_html_e( 'Card Number', 'woocommerce-gateway-stripe' ); ?> <span class="required">*</span></label>
 					<div class="stripe-card-group">
-						<div id="stripe-card-element" style="background:#fff;padding:0 1em;border:1px solid #ddd;margin:5px 0;padding:10px 5px;">
+						<div id="stripe-card-element" class="wc-stripe-elements-field">
 						<!-- a Stripe Element will be inserted here. -->
 						</div>
 
@@ -379,14 +379,14 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 				<div class="form-row form-row-first">
 					<label for="stripe-exp-element"><?php esc_html_e( 'Expiry Date', 'woocommerce-gateway-stripe' ); ?> <span class="required">*</span></label>
 
-					<div id="stripe-exp-element" style="background:#fff;padding:0 1em;border:1px solid #ddd;margin:5px 0;padding:10px 5px;">
+					<div id="stripe-exp-element" class="wc-stripe-elements-field">
 					<!-- a Stripe Element will be inserted here. -->
 					</div>
 				</div>
 
 				<div class="form-row form-row-last">
 					<label for="stripe-cvc-element"><?php esc_html_e( 'Card Code (CVC)', 'woocommerce-gateway-stripe' ); ?> <span class="required">*</span></label>
-				<div id="stripe-cvc-element" style="background:#fff;padding:0 1em;border:1px solid #ddd;margin:5px 0;padding:10px 5px;">
+				<div id="stripe-cvc-element" class="wc-stripe-elements-field">
 				<!-- a Stripe Element will be inserted here. -->
 				</div>
 				</div>
@@ -626,11 +626,14 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 	 * @return bool
 	 */
 	public function maybe_redirect_stripe_checkout() {
+		$is_payment_request = ( isset( $_POST ) && isset( $_POST['payment_request_type'] ) );
+
 		return (
 			$this->stripe_checkout &&
 			! isset( $_POST['stripe_checkout_order'] ) &&
 			! $this->is_using_saved_payment_method() &&
-			! is_wc_endpoint_url( 'order-pay' )
+			! is_wc_endpoint_url( 'order-pay' ) &&
+			! $is_payment_request
 		);
 	}
 
@@ -723,12 +726,18 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 						$order->save();
 					}
 
-					WC_Stripe_Logger::log( 'Info: Redirecting to 3DS...' );
+					/*
+					 * Make sure after creating 3DS object it is in pending status
+					 * before redirecting.
+					 */
+					if ( 'pending' === $response->redirect->status ) {
+						WC_Stripe_Logger::log( 'Info: Redirecting to 3DS...' );
 
-					return array(
-						'result'   => 'success',
-						'redirect' => esc_url_raw( $response->redirect->url ),
-					);
+						return array(
+							'result'   => 'success',
+							'redirect' => esc_url_raw( $response->redirect->url ),
+						);
+					}
 				}
 
 				WC_Stripe_Logger::log( "Info: Begin processing payment for order $order_id for the amount of {$order->get_total()}" );

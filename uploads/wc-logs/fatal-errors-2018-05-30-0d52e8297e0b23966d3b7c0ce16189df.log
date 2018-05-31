@@ -1,0 +1,48 @@
+2018-05-30T15:36:22+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+
+2018-05-30T15:36:37+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+
+2018-05-30T16:13:40+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+
+2018-05-30T16:13:43+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_query() in /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/playlist/add_playlist.php:20
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-content/plugins/html5-jquery-audio-player/index.php(62): include()
+#1 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(286): wp_hmp_playlist('')
+#2 /srv/www/music-site/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/www/music-site/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/www/music-site/public_html/wp-admin/admin.php(224): do_action('html5-player_pa...')
+#5 {main}
+  thrown
+
+2018-05-30T21:46:05+00:00 CRITICAL Uncaught Error: Call to undefined function getprevious_post_link() in /srv/www/music-site/public_html/wp-content/themes/music site/single-post.php:23
+Stack trace:
+#0 /srv/www/music-site/public_html/wp-includes/template-loader.php(74): include()
+#1 /srv/www/music-site/public_html/wp-blog-header.php(19): require_once('/srv/www/music-...')
+#2 /srv/www/music-site/public_html/index.php(17): require('/srv/www/music-...')
+#3 {main}
+  thrown
+

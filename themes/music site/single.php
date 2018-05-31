@@ -4,19 +4,24 @@
 
 get_header();?>
 
-<a href="http://localhost:3000/merch/" style="color: #FFFFFF;"><-- Back To Merch</a>
+<div class="product-wrapper">
+
+<a class="back-btn" href="http://localhost:3000/merch/" >&larr; Back To Merch</a>
 
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<h1><?php the_title(); ?></h1>  
-        <div class="entry">
+<h1 class="product-title"><?php echo get_the_title(); ?></h1>  
+
+        <div class="product-content">
             <?php the_content(); ?>
-        </div><!-- entry -->
+        </div>
+
 <?php endwhile; ?>
 <?php endif; ?>
 
+</div>
 
 
 <?php get_footer();?>

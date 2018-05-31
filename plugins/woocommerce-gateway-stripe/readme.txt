@@ -4,7 +4,7 @@ Tags: credit card, stripe, apple pay, payment request, google pay, sepa, sofort,
 Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 5.6
-Stable tag: 4.1.3
+Stable tag: 4.1.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Attributions: thorsten-stripe
@@ -101,14 +101,15 @@ If you get stuck, you can ask for help in the Plugin Forum.
 
 == Changelog ==
 
-= 4.1.3 - 2018-05-07 =
-* Add - Hook to manipulate payment request shipping posted values `wc_stripe_payment_request_shipping_posted_values`.
-* Add - Accessibility attribute for credit card label.
-* Add - Hook to change Stripe supported countries `wc_stripe_supported_countries`.
-* Fix - WC 2.6 compatibility issue during a refund.
-* Fix - Payment Request JS error when default country setting is not supported.
-* Fix - Failed payments were sending two failed emails to admin instead of one.
-* Tweak - Remove payment methods links from WC Payment Settings page for WC 3.4+.
+= 4.1.5 - 2018-05-28 =
+* Tweak - Refactor initialization of plugin.
+* Tweak - Webhook failed handler now handles all payment methods.
+* Tweak - Make sure 3DS object is in pending status before redirecting.
+* Tweak - CSS styling.
+* Add - Username to the description field of the Stripe customer when created.
+* Add - GDPR retention setting and logic.
+* Fix - Payment request payments were redirected to Pay Order when it should be Order Received.
+* Update - Stripe API version to 2018-05-21.
 
 [See changelog for all versions](https://raw.githubusercontent.com/woothemes/woocommerce-gateway-stripe/master/changelog.txt).
 
